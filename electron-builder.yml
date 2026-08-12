@@ -1,0 +1,18 @@
+appId: com.skillmanager.orchestrator
+productName: SkillSOPOrchestrator
+directories:
+  output: release
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - package.json
+win:
+  target: nsis
+  artifactName: SkillSOPOrchestrator-Setup-${version}.${ext}
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Skill SOP 编排工具

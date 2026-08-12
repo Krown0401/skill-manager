@@ -1,0 +1,172 @@
+{
+  "accounts": [
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "120014",
+      "hospitalName": "自贡",
+      "username": "byp001",
+      "password": "123@admin",
+      "addedBy": "苏老板牛逼"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "120022",
+      "hospitalName": "湖南职防院",
+      "username": "2056",
+      "password": "123@admin",
+      "addedAt": "2025-12-12T09:23:40.842Z"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "120022",
+      "hospitalName": "湖南职防院",
+      "username": "cs002",
+      "password": "123@admin",
+      "addedAt": "2026-01-20T03:01:42.286Z"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "120022",
+      "hospitalName": "湖南职防院",
+      "username": "test001",
+      "password": "123@admin",
+      "addedAt": "2026-01-20T09:30:51.997Z"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "120042",
+      "hospitalName": "福建人民医院",
+      "username": "001",
+      "password": "123@admin",
+      "addedAt": "2026-03-02T03:46:37.395Z"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "120042",
+      "hospitalName": "福建人民医院",
+      "username": "fy001",
+      "password": "123@admin",
+      "addedAt": "2026-03-03T07:46:54.506Z"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "120042",
+      "hospitalName": "福建人民医院",
+      "username": "test001",
+      "password": "123@admin",
+      "addedAt": "2026-03-04T08:29:48.012Z"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "120043",
+      "hospitalName": "湖南人民医院",
+      "username": "fy001",
+      "password": "123@admin",
+      "addedAt": "2026-03-17T09:14:49.907Z"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "120052",
+      "hospitalName": "重庆中医院",
+      "username": "test001",
+      "password": "123@admin",
+      "addedBy": "苏老板牛逼"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "120123",
+      "hospitalName": "成都高新妇幼",
+      "username": "test001",
+      "password": "123@admin",
+      "addedAt": "2026-03-24T08:42:00.722Z"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "005350",
+      "hospitalName": "华西",
+      "username": "test001",
+      "password": "123@admin",
+      "addedBy": "苏老板牛逼"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "005350",
+      "hospitalName": "华西",
+      "username": "test999",
+      "password": "123@admin",
+      "addedBy": "苏老板牛逼"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "005350",
+      "hospitalName": "华西",
+      "username": "15695912345",
+      "password": "123@admin",
+      "addedBy": "苏老板牛逼"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "005350",
+      "hospitalName": "华西",
+      "username": "fy001",
+      "password": "123@admin",
+      "addedAt": "2025-12-12T09:24:15.044Z"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "005340",
+      "hospitalName": "138环境",
+      "username": "15396005467",
+      "password": "123@admin",
+      "addedBy": "苏老板牛逼"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "000048",
+      "hospitalName": "未知",
+      "username": "fy002",
+      "password": "123@admin",
+      "addedAt": "2025-12-12T09:29:55.613Z"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "000048",
+      "hospitalName": "未知",
+      "username": "ly001",
+      "password": "123@admin",
+      "addedAt": "2025-12-22T11:50:06.903Z"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "110235",
+      "hospitalName": "demo",
+      "username": "xy001",
+      "password": "123@admin",
+      "addedBy": "苏老板牛逼"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "110235",
+      "hospitalName": "demo",
+      "username": "fy001",
+      "password": "123@admin",
+      "addedBy": "苏老板牛逼"
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "120202",
+      "hospitalName": "重庆儿童医院",
+      "username": "13458740808",
+      "password": "123@admin",
+      "addedBy": ""
+    },
+    {
+      "url": "172.18.163.52:30000/saas-industry/",
+      "hospitalCode": "120202",
+      "hospitalName": "重庆儿童医院",
+      "username": "001",
+      "password": "123@admin",
+      "addedBy": ""
+    }
+  ]
+}

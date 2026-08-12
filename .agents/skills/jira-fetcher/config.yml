@@ -1,0 +1,19 @@
+# Jira Fetcher 配置
+
+jira:
+  base_url: "http://172.18.169.8:6899"
+  username: "巩芳旭"
+
+  password: "OwnS7*#y"
+
+# 超时设置（秒）
+timeout:
+  connect: 5
+  read: 30
+
+# 导出路径配置
+export:
+  # 项目根目录（留空则自动检测）
+  root_dir: ""
+  # 输出子目录
+  output_dir: "doc"

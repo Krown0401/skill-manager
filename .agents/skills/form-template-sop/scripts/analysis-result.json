@@ -1,0 +1,115 @@
+{
+  "_schema": "UI 分析结果格式 — 由 AI 分析截图后输出,可驱动 HTML 可视化和确认文档生成",
+  "_fields_note": "fields 为扁平列表供 Step 3 消费;sections 为分组列表供 HTML 线框图消费",
+  "_grid_note": "section.grid 定义该分区列数;field.gridSpan 定义字段占用列数(默认1);HTML 线框图按 grid 列数渲染,累计超过 grid 值时自动换行",
+  "_header_rule": "第一个 section 必须为「单据头部」(type:header)，非表单栅格，渲染为横排元数据行 (label: value | ...)。头部字段均为自动带出默认规则：单据编号(系统生成)、申请日期(当前日期)、申请人(登录用户)、所属部门(用户部门)。组件类型均为文本显示",
+  "_header_defaults": "除非产品文档有提及新规则，否则头部字段采用此默认规则",
+  "_verbatim_rule": "强制要求：所有 title 和 label 必须与截图文字 100% 匹配。严禁脑补前缀（如将「开始日期」写成「进修开始日期」）",
+
+  "task_info": {
+    "jira_id": "YLZHXT-XXXX",
+    "hospital": "华西医院",
+    "form_name": "外出进修申请",
+    "terminal": "PC",
+    "version": "V2.0.3.4",
+    "analysis_time": "2026-05-18"
+  },
+
+  "sections": [
+    {
+      "title": "单据头部",
+      "type": "header",
+      "status": "待提交",
+      "fields": [
+        { "label": "单据编号", "value": "AUTO", "auto": true },
+        { "label": "申请日期", "value": "2024-12-19", "auto": true },
+        { "label": "申请人", "value": "张三", "auto": true },
+        { "label": "所属部门", "value": "神经外科", "auto": true }
+      ]
+    },
+    {
+      "title": "基本信息",
+      "grid": 3,
+      "fields": [
+        { "title": "进修人", "component": "人员选择器", "required": true, "gridSpan": 1 },
+        { "title": "所属科室", "component": "部门选择", "required": true, "auto_fill": true, "gridSpan": 1 },
+        { "title": "联系电话", "component": "文本输入", "required": true, "gridSpan": 1 }
+      ]
+    },
+    {
+      "title": "进修信息",
+      "grid": 3,
+      "fields": [
+        { "title": "进修机构", "component": "文本输入", "required": true, "gridSpan": 1 },
+        { "title": "进修意义", "component": "多行文本", "required": true, "gridSpan": 3 }
+      ]
+    },
+    {
+      "title": "预算项目",
+      "type": "table",
+      "columns": [
+        { "title": "序号", "width": "60px" },
+        { "title": "预算项目名称", "required": true },
+        { "title": "预算项目编码", "required": true },
+        { "title": "资金来源" },
+        { "title": "经费负责人" },
+        { "title": "经费余额" },
+        { "title": "本次占用金额" },
+        { "title": "操作" }
+      ]
+    }
+  ],
+
+  "fields": [
+    {
+      "seq": 1,
+      "title": "单据编号",
+      "component": "文本显示",
+      "required": false,
+      "auto_fill": true,
+      "reaction": "系统自动生成",
+      "notes": "头部元数据，默认规则",
+      "gridSpan": 0
+    },
+    {
+      "seq": 2,
+      "title": "申请日期",
+      "component": "文本显示",
+      "required": false,
+      "auto_fill": true,
+      "reaction": "默认当前日期",
+      "notes": "头部元数据，默认规则",
+      "gridSpan": 0
+    },
+    { "seq": 3, "title": "申请人", "component": "文本显示", "required": false, "auto_fill": true, "reaction": "自动带出登录用户", "notes": "头部元数据，默认规则", "gridSpan": 0 },
+    {
+      "seq": 4,
+      "title": "所属部门",
+      "component": "文本显示",
+      "required": false,
+      "auto_fill": true,
+      "reaction": "自动带出申请人部门",
+      "notes": "头部元数据，默认规则",
+      "gridSpan": 0
+    },
+    { "seq": 5, "title": "进修人", "component": "人员选择器", "required": true, "auto_fill": false, "reaction": "-", "notes": "", "gridSpan": 1 },
+    { "seq": 2, "title": "所属科室", "component": "部门选择", "required": true, "auto_fill": true, "reaction": "选择进修人后自动带出", "notes": "", "gridSpan": 1 },
+    { "seq": 3, "title": "联系电话", "component": "文本输入", "required": true, "auto_fill": false, "reaction": "-", "notes": "", "gridSpan": 1 }
+  ],
+
+  "reactions": [
+    { "type": "自动计算", "description": "进修天数 = 进修结束日期 - 进修开始日期" },
+    { "type": "条件显示", "description": "经费名称仅当经费类型=\"非专项\"时显示" },
+    { "type": "自动回填", "description": "选择进修人后回填：科室、性别、学历等" }
+  ],
+
+  "risks": [
+    { "type": "UI 歧义", "description": "PC端与移动端截图字段布局可能有差异" },
+    { "type": "联动边界", "description": "进修天数手动修改后是否覆盖自动计算值需确认" }
+  ],
+
+  "pc_mobile_diff": {
+    "layout": ["PC端多列栅格（3列），移动端单列垂直流", "PC端标签在顶部，移动端标签在左侧"],
+    "component": ["移动端底部弹窗 Picker，PC端下拉菜单", "PC端操作按钮在右上角，移动端固定底部"]
+  }
+}
