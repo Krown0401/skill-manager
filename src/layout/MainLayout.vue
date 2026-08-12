@@ -26,7 +26,7 @@
     </el-aside>
     <el-container>
       <el-header style="background: #fff; border-bottom: 1px solid #ebeef5; display: flex; align-items: center;">
-        <h3 style="margin: 0;">{{ $route.meta.title as string }}</h3>
+        <h3 style="margin: 0;">{{ $route.meta.title }}</h3>
       </el-header>
       <el-main style="background: #f5f7fa;">
         <router-view />
